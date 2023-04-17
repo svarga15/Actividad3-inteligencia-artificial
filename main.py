@@ -10,7 +10,7 @@ def aprensizaje():
                        [39, 0.8, 68],
                        [39, 0.8, 69]]
 
-    # 0 corresponde a gato y 1 a perro, segun las caracteristicas anteriores
+    # 0 corresponde a gato y 1 a perro, segun las caracteristicas anteriores, subiendo commit
     valores = [0, 0, 0, 1, 1, 1]
 
     # esta funcion es la que vamos a ulitizar
@@ -19,7 +19,7 @@ def aprensizaje():
     # lo podemos a entrenar todos los patrones para que hagas las predicciones
     clasificaciones.fit(caracteristicas, valores)
 
-    respuesta = clasificaciones.predict([[39, 0.8, 67]])
+    respuesta = clasificaciones.predict([[8, 0.6, 50]])
 
     print(respuesta)
 
